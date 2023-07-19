@@ -5,13 +5,13 @@
   font-family: "Rubik", sans-serif;
 }
 *::selection {
-  color: white;
+  color: var(--primary-text);
   background-color: var(--tags-hover);
 }
 
 :root {
   --btn-color: #845ec2;
-  --tags-hover: #ff9670;
+  --tags-hover: #38FFDF;
   --primary-text: #000;
   --secondary-text: #6b7280;
   --border-radius: 0.5rem;
@@ -94,24 +94,25 @@ body {
 .header__info__skillslist {
   display: flex;
   justify-content: space-between;
+  gap: 1rem;
 }
 @media (max-width: 1400px) {
   .header__info__skillslist {
     flex-wrap: wrap;
     justify-content: flex-start;
-    gap: 1rem;
   }
 }
 .header__info__skillslist__li {
   list-style: none;
   display: inline-block;
   background-color: var(--tags-hover);
-  color: white;
+  color: var(--primary-text);
   padding: 0.5rem 1rem;
   border-radius: var(--border-radius);
 }
 .header__info__skillslist li::selection {
   background-color: var(--btn-color);
+  color: white;
 }
 .header__profile__figure {
   border-radius: 50%;
@@ -226,6 +227,9 @@ body {
   color: white;
   font-size: 16px;
   text-decoration: none;
+}
+.footer__info__links__btn--a--hover:hover {
+  color: var(--primary-text);
 }
 .footer__info__links__btn--a2 {
   text-decoration: none;
